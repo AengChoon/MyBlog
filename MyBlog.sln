@@ -4,6 +4,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebApp", "BlazorWebAp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorWebApp.Client", "BlazorWebApp\BlazorWebApp.Client\BlazorWebApp.Client.csproj", "{B81F3F64-7AD2-4969-913D-78AD250D74CD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data", "Data\Data.csproj", "{1A62C4B7-E4FB-44F9-8DEB-B38054FDB42E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Data.Models", "Data.Models\Data.Models.csproj", "{7F62D7D5-B583-49E9-B3BE-74A7A49C4110}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +22,13 @@ Global
 		{B81F3F64-7AD2-4969-913D-78AD250D74CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B81F3F64-7AD2-4969-913D-78AD250D74CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B81F3F64-7AD2-4969-913D-78AD250D74CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A62C4B7-E4FB-44F9-8DEB-B38054FDB42E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A62C4B7-E4FB-44F9-8DEB-B38054FDB42E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A62C4B7-E4FB-44F9-8DEB-B38054FDB42E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A62C4B7-E4FB-44F9-8DEB-B38054FDB42E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F62D7D5-B583-49E9-B3BE-74A7A49C4110}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F62D7D5-B583-49E9-B3BE-74A7A49C4110}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F62D7D5-B583-49E9-B3BE-74A7A49C4110}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F62D7D5-B583-49E9-B3BE-74A7A49C4110}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

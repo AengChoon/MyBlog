@@ -1,5 +1,7 @@
 using BlazorWebApp.Client.Pages;
 using BlazorWebApp.Components;
+using Data;
+using Data.Models.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -7,6 +9,18 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddRazorComponents()
        .AddInteractiveServerComponents()
        .AddInteractiveWebAssemblyComponents();
+
+builder.Services.AddOptions<BlogApiJsonDirectAccessSettings>()
+       .Configure(options => 
+       { 
+           options.DataPath = @"../../../Data/"; 
+           options.PostsDirectory = "Posts"; 
+           options.CategoriesDirectory = "Categories"; 
+           options.TagsDirectory = "Tags"; 
+           options.CommentsDirectory = "Comments"; 
+       });
+
+builder.Services.AddScoped<IBlogApi, BlogApiJsonDirectAccess>();
 
 var app = builder.Build();
 
